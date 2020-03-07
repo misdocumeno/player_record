@@ -4,7 +4,7 @@
 
 - Save AccountID, name and IP in each connection
 - Save AccountID, name and IP in a name change
-- If the AccountID. name and IP are the same as a previous save, only the date will be updated
+- If the AccountID, name and IP are the same as a previous save, only the date will be updated
 - Useful admin commands to view info about players giving an AccountID, name or IP
 
 ## Info Commands
@@ -40,7 +40,7 @@ Cvar | Description
 
 # How to install
 - Install MySQL with `sudo apt-get install mysql-server`
-- Create a user and a database, and make sure it's remotely accessible
+- Create a user and a database, make sure it's remotely accessible
 - Run this command on MySQL `SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));`
 - Add this on **databases.cfg**, located in **addons/sourcemod/configs** (edit the values with *)
 ```
