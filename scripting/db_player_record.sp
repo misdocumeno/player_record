@@ -923,7 +923,14 @@ public void OnInfoQuery(Database db, DBResultSet results, const char[] sError, D
 		for (int i = 0; i < iRowAmount; i++)
 		{
 			if (i != 0)
-				CPrintToChat(client, "{green}----------");
+			{
+				if (g_iPrintChat && client)
+					CPrintToChat(client, "{green}----------");
+				if (g_iPrintConsole && client)
+					PrintToConsole(client, "----------");
+				if (g_iPrintServer)
+					PrintToServer("----------");
+			}
 
 			char sNameBuffer2[MAX_NAME_LENGTH];
 			char sIPBuffer2[16];
@@ -1086,7 +1093,14 @@ public void OnInfoQueryRetry1(Database db, DBResultSet results, const char[] sEr
 		for (int i = 0; i < iRowAmount; i++)
 		{
 			if (i != 0)
-				CPrintToChat(client, "{green}----------");
+			{
+				if (g_iPrintChat && client)
+					CPrintToChat(client, "{green}----------");
+				if (g_iPrintConsole && client)
+					PrintToConsole(client, "----------");
+				if (g_iPrintServer)
+					PrintToServer("----------");
+			}
 
 			char sNameBuffer2[MAX_NAME_LENGTH];
 			char sIPBuffer2[16];
@@ -1211,7 +1225,14 @@ public void OnInfoQueryRetry2(Database db, DBResultSet results, const char[] sEr
 		for (int i = 0; i < iRowAmount; i++)
 		{
 			if (i != 0)
-				CPrintToChat(client, "{green}----------");
+			{
+				if (g_iPrintChat && client)
+					CPrintToChat(client, "{green}----------");
+				if (g_iPrintConsole && client)
+					PrintToConsole(client, "----------");
+				if (g_iPrintServer)
+					PrintToServer("----------");
+			}
 
 			char sNameBuffer2[MAX_NAME_LENGTH];
 			char sIPBuffer2[16];
@@ -1336,7 +1357,14 @@ public void OnInfoQueryRetry3(Database db, DBResultSet results, const char[] sEr
 		for (int i = 0; i < iRowAmount; i++)
 		{
 			if (i != 0)
-				CPrintToChat(client, "{green}----------");
+			{
+				if (g_iPrintChat && client)
+					CPrintToChat(client, "{green}----------");
+				if (g_iPrintConsole && client)
+					PrintToConsole(client, "----------");
+				if (g_iPrintServer)
+					PrintToServer("----------");
+			}
 
 			char sNameBuffer2[MAX_NAME_LENGTH];
 			char sIPBuffer2[16];
